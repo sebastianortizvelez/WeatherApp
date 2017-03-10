@@ -30,7 +30,7 @@ namespace WeatherApp
 
                 if (weather.Visibility.Equals("Clear"))
                 {
-                    weather.Visibility = "Despejado";
+                    weather.Visibility = "Despejadosss";
 
                 }
 

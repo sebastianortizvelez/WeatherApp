@@ -5,21 +5,6 @@
       <File FileName="WeatherApp/Core.cs" Line="28" Column="11" />
       <File FileName="WeatherApp/TiempoActual.xaml.cs" Line="25" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="WeatherApp" expanded="True">
-            <Node name="WeatherApp" expanded="True">
-              <Node name="Core.cs" selected="True" />
-              <Node name="TiempoActual.xaml" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="WeatherApp" expanded="True">
-            <Node name="WeatherApp" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
