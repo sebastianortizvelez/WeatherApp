@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WeatherApp.Pronostico" Title="Pronostico" Icon="unit.png" Padding="0,20,0,0">
+	<ContentPage.Content>
+
+		<ListView x:Name="listView">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+			
+
+
+				
+						<StackLayout Padding="5" Orientation="Horizontal" >
+							<Image Source="{Binding foto}" Margin="70,0,0,0">
+							</Image>
+							<Label Text="{Binding dia}" Margin="30,0,0,0" FontSize=" 30" />
+							<Label Text="{Binding temperatura,StringFormat='º{0}'}" Margin="30,0,0,0" FontSize="30" />
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>

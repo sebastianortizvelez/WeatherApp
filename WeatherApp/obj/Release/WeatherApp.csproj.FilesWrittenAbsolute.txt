@@ -1,0 +1,17 @@
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.App.xaml
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.WeatherAppPage.xaml
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.NavigationPage.xaml
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.TiempoActual.xaml
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.Pronostico.xaml
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.App.xaml.g.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.WeatherAppPage.xaml.g.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.NavigationPage.xaml.g.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.TiempoActual.xaml.g.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.Pronostico.xaml.g.cs
+/Users/MAC10/Projects/WeatherApp/WeatherApp/bin/Release/Xamarin.Forms.Core.dll
+/Users/MAC10/Projects/WeatherApp/WeatherApp/bin/Release/Xamarin.Forms.Platform.dll
+/Users/MAC10/Projects/WeatherApp/WeatherApp/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/MAC10/Projects/WeatherApp/WeatherApp/bin/Release/Newtonsoft.Json.dll
+/Users/MAC10/Projects/WeatherApp/WeatherApp/bin/Release/WeatherApp.dll
+/Users/MAC10/Projects/WeatherApp/WeatherApp/obj/Release/WeatherApp.dll

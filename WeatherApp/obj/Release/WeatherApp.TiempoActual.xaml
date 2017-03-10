@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WeatherApp.TiempoActual"  Title="Clima" Icon="unit.png">
+<ContentPage.Content>
+		<ScrollView>
+		<StackLayout>
+			<StackLayout Orientation="Horizontal">
+			<Image Source="search.png" WidthRequest="30" HeightRequest="30" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Image>
+			<Entry x:Name="zipCodeEntry"  FontSize="30">
+			</Entry>
+
+					    <Button x:Name="getWeatherBtn" Text="Get Weather" WidthRequest="185" BorderWidth="1" >
+     
+            </Button>
+
+					
+			</StackLayout>
+		
+			<Label  x:Name="tempLabel" Text="{Binding Temperature}" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center">
+			</Label>
+			<StackLayout Orientation="Horizontal" Padding="45,0,0,0">
+				<Label Text=""  x:Name="tempLabels" FontSize="130" VerticalOptions="Center">
+				</Label>
+				<StackLayout Orientation="Vertical" Padding="45,15,0,0">
+					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+					<Label Text="1mpH" FontSize="30" HorizontalOptions="Fill" TextColor="Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+						<Label Text="Humedad" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+					<Label Text="0%" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+						<Label Text="Indice UV" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+					<Label Text="1/10" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+					
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Padding="5,20,0,0">
+
+				<Label Text="Lun" FontSize="20" HorizontalOptions="Center" VerticalOptions="Fill">
+				</Label>
+				<Label Text="Mar" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+				<Label Text="Mie" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+				<Label Text="Jue" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+				<Label Text="Vie" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+				<Label Text="Sab" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+					<Label Text="Dom" FontSize="20" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+				</Label>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Padding="5,15,0,0">
+				<Image Source="soleado.png" WidthRequest="30" HeightRequest="30">
+				</Image>
+				<Image Source="cloudblack.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+				<Image Source="cloudwhite.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+				<Image Source="lluvias.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+				<Image Source="cloudwhite.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+					<Image Source="cloudblack.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+					<Image Source="soleado.png" WidthRequest="30" HeightRequest="30" Margin="15,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+				</Image>
+			</StackLayout>
+
+		</StackLayout>
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

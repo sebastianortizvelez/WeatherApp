@@ -1,0 +1,15 @@
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/actool/_PartialAppManifest.items
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/actool/_BundleResourceWithLogicalName.items
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/optimized/
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/WeatherApp.iOS.exe.mdb
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/WeatherApp.iOS.exe
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/WeatherApp.iOS.exe
+/Users/MAC10/Projects/WeatherApp/iOS/obj/iPhoneSimulator/Release/WeatherApp.iOS.exe.mdb
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Core.dll
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Platform.dll
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Platform.iOS.dll
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Xaml.dll
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/WeatherApp.dll
+/Users/MAC10/Projects/WeatherApp/iOS/bin/iPhoneSimulator/Release/Newtonsoft.Json.dll

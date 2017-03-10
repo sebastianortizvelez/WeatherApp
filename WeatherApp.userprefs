@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{13594E95-E6F9-4D27-87A9-3D7933E7912C}|Default">
+  <MonoDevelop.Ide.ItemProperties.WeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AFEDE4A9-4A67-4A52-B184-FF5481A2DE39" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherApp/Core.cs">
+    <Files>
+      <File FileName="WeatherApp/Core.cs" Line="28" Column="11" />
+      <File FileName="WeatherApp/TiempoActual.xaml.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WeatherApp" expanded="True">
+            <Node name="WeatherApp" expanded="True">
+              <Node name="Core.cs" selected="True" />
+              <Node name="TiempoActual.xaml" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="WeatherApp" expanded="True">
+            <Node name="WeatherApp" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WeatherApp.Droid PreferredExecutionTarget="Android.Nexus5" />
+</Properties>
