@@ -17,10 +17,7 @@ namespace WeatherApp {
     public partial class TiempoActual : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry zipCodeEntry;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button getWeatherBtn;
+        private global::Xamarin.Forms.Entry cityEntry;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label tempLabel;
@@ -32,17 +29,16 @@ namespace WeatherApp {
         private global::Xamarin.Forms.Label humidityLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label visibilitylabel;
+        private global::Xamarin.Forms.Label ocasoentry;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(TiempoActual));
-            zipCodeEntry = this.FindByName <global::Xamarin.Forms.Entry>("zipCodeEntry");
-            getWeatherBtn = this.FindByName <global::Xamarin.Forms.Button>("getWeatherBtn");
+            cityEntry = this.FindByName <global::Xamarin.Forms.Entry>("cityEntry");
             tempLabel = this.FindByName <global::Xamarin.Forms.Label>("tempLabel");
             windLabel = this.FindByName <global::Xamarin.Forms.Label>("windLabel");
             humidityLabel = this.FindByName <global::Xamarin.Forms.Label>("humidityLabel");
-            visibilitylabel = this.FindByName <global::Xamarin.Forms.Label>("visibilitylabel");
+            ocasoentry = this.FindByName <global::Xamarin.Forms.Label>("ocasoentry");
         }
     }
 }

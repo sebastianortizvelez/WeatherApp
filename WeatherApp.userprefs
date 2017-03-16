@@ -2,9 +2,25 @@
   <MonoDevelop.Ide.ItemProperties.WeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AFEDE4A9-4A67-4A52-B184-FF5481A2DE39" />
   <MonoDevelop.Ide.Workbench ActiveDocument="WeatherApp/Core.cs">
     <Files>
-      <File FileName="WeatherApp/Core.cs" Line="28" Column="11" />
-      <File FileName="WeatherApp/TiempoActual.xaml.cs" Line="25" Column="1" />
+      <File FileName="WeatherApp/ForecastWeatherModel.cs" Line="60" Column="3" />
+      <File FileName="WeatherApp/Data.cs" Line="100" Column="28" />
+      <File FileName="WeatherApp/CurrentWeatherModel.cs" Line="10" Column="41" />
+      <File FileName="WeatherApp/DataService.cs" Line="1" Column="1" />
+      <File FileName="WeatherApp/Core.cs" Line="12" Column="59" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WeatherApp" expanded="True">
+            <Node name="WeatherApp" expanded="True">
+              <Node name="Core.cs" selected="True" />
+              <Node name="Pronostico.xaml" expanded="True" />
+              <Node name="TiempoActual.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

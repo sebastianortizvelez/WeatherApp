@@ -60,6 +60,8 @@
     <Compile Include="Data.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DataService.cs" />
+    <Compile Include="CurrentWeatherModel.cs" />
+    <Compile Include="ForecastWeatherModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

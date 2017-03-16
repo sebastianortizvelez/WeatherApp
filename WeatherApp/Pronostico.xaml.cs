@@ -10,7 +10,7 @@ namespace WeatherApp
         public Pronostico()
         {
             InitializeComponent();
-            listView.ItemsSource = Data.WeatherList;
+   listView.ItemsSource = Data.WeatherList;
         }
     }
 }

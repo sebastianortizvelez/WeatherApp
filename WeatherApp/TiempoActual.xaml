@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WeatherApp.TiempoActual"  Title="Clima" Icon="unit.png">
-<ContentPage.Content>
+
+
+	<ContentPage.Content>
 		<ScrollView>
 		<StackLayout>
 			<StackLayout Orientation="Horizontal">
 			<Image Source="search.png" WidthRequest="30" HeightRequest="30" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
 				</Image>
-			<Entry x:Name="zipCodeEntry"  Placeholder = "Introduce la ciudad" FontSize="30">
+			<Entry x:Name="cityEntry"  Placeholder = "Introduce la ciudad" FontSize="30">
 			</Entry>
 
-					    <Button x:Name="getWeatherBtn" Text="Aceptar" WidthRequest="185" BorderWidth="1" >
+					    <Button Text="Aceptar" WidthRequest="185" BorderWidth="1" Clicked="Handle_Clicked" >
      
             </Button>
 
@@ -18,10 +20,15 @@
 		
 			<Label Text="{Binding Title}" FontSize="40" HorizontalOptions="Start" VerticalOptions="Center">
 			</Label>
-			<StackLayout Orientation="Horizontal" Padding="45,0,0,0">
-				<Label x:Name="tempLabel" Text="{Binding Temperature}" FontSize="100" VerticalOptions="Center">
+			<StackLayout Orientation="Horizontal" Padding="45,0,0,0" >
+
+				
+				<Label x:Name="tempLabel" Text="{Binding Temperature}" FontSize="60" VerticalOptions = "Center" >
 				</Label>
-				<StackLayout Orientation="Vertical" Padding="45,15,0,0">
+
+
+					
+				<StackLayout Orientation="Vertical" Padding="85,15,0,0">
 					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill">
 					</Label>
 					<Label x:Name="windLabel" Text="{Binding Wind}"  FontSize="30" HorizontalOptions="Fill" TextColor="Red" VerticalOptions="Fill" Margin="0,-15,0,0">
@@ -30,10 +37,23 @@
 					</Label>
 					<Label x:Name="humidityLabel" Text="{Binding Humidity}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>
-						<Label Text="Cielo" FontSize="30" HorizontalOptions="Fill">
+						<Label Text="Temp min" FontSize="30" HorizontalOptions="Fill">
 					</Label>
-					<Label x:Name="visibilitylabel" Text="{Binding Visibility}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label  Text="{Binding Temp_min}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>
+							<Label Text="Temp max" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+					<Label  Text="{Binding Temp_max}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+							</Label>
+									<Label Text="Ocaso" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+					<Label x:Name="ocasoentry"  Text="{Binding Sunset, StringFormat='{}{0:h:mm tt}'}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+									<Label Text="Alba" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+							<Label  Text="{Binding Sunrise, StringFormat='{}{0:h:mm tt}'}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+						
 					
 				</StackLayout>
 			</StackLayout>

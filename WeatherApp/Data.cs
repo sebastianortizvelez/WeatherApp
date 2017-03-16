@@ -6,36 +6,82 @@ using System.Collections.ObjectModel;
 
 namespace WeatherApp
 {
+
+
+
+    public class Coord
+    {
+        public double lon { get; set; }
+        public double lat { get; set; }
+    }
+
     public class Weather
     {
-        
+
         public int dia { get; set; }
         public int temperatura { get; set; }
         public String foto { get; set; }
 
 
-        public string Title { get; set; }
-        public string Temperature { get; set; }
-        public string Wind { get; set; }
-        public string Humidity { get; set; }
-        public string Visibility { get; set; }
-        public string Sunrise { get; set; }
-        public string Sunset { get; set; }
-
-
-        public Weather()
-        {
-            //Because labels bind to these values, set them to an empty string to
-            //ensure that the label appears on all platforms by default.
-            this.Title = " ";
-            this.Temperature = " ";
-            this.Wind = " ";
-            this.Humidity = " ";
-            this.Visibility = " ";
-            this.Sunrise = " ";
-            this.Sunset = " ";
-        }
+        public int id { get; set; }
+        public string main { get; set; }
+        public string description { get; set; }
+        public string icon { get; set; }
     }
+
+    public class Main
+    {
+        public double temp { get; set; }
+        public int pressure { get; set; }
+        public int humidity { get; set; }
+        public double temp_min { get; set; }
+        public double temp_max { get; set; }
+        public String foto { get; set; }
+
+    }
+
+    public class Wind
+    {
+        public double speed { get; set; }
+        public int deg { get; set; }
+    }
+
+    public class Clouds
+    {
+        public int all { get; set; }
+    }
+
+    public class Rain
+    {
+        public int __invalid_name__3h { get; set; }
+    }
+
+    public class Sys
+    {
+        public int type { get; set; }
+        public int id { get; set; }
+        public double message { get; set; }
+        public string country { get; set; }
+        public int sunrise { get; set; }
+        public int sunset { get; set; }
+    }
+
+    public class RootObject
+    {
+        public Coord coord { get; set; }
+        public List<Weather> weather { get; set; }
+        public string @base { get; set; }
+        public Main main { get; set; }
+        public Wind wind { get; set; }
+        public Clouds clouds { get; set; }
+        public Rain rain { get; set; }
+        public int dt { get; set; }
+        public Sys sys { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public int cod { get; set; }
+    }
+
 
 
     public class Data
@@ -43,17 +89,15 @@ namespace WeatherApp
 
 
         #region WeatherList
-        public static ObservableCollection<Weather> WeatherList = new ObservableCollection<Weather>
+        public static ObservableCollection<Main> WeatherList = new ObservableCollection<Main>
         {
 
-            new Weather { dia = 20, temperatura = 35,foto = "lluvias.png"},
-                  new Weather { dia = 21, temperatura = 9, foto = "soleado.png"},
-                  new Weather { dia = 22, temperatura = 13,foto = "lluvias.png"},
-            new Weather {dia = 23,temperatura = 30, foto = "cloudblack.png"},
-                    new Weather { dia = 24, temperatura = 32,foto = "soleado.png"},
-                  new Weather { dia = 25, temperatura = 30, foto = "cloudwhite.png"},
-                  new Weather { dia = 26, temperatura = 31,foto = "lluvias.png"},
-            new Weather {dia = 27,temperatura = 29, foto = "cloudblack.png"}
+            new Main { temp = 20, temp_min = 0,foto = "lluvias.png"},
+                  new Main{ },
+         new Main{ },
+               new Main{ },
+               new Main{ },
+               new Main{ },
 
         };
 #endregion

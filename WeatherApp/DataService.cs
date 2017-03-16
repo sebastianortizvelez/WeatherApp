@@ -7,19 +7,22 @@ namespace WeatherApp
 {
     public class DataService
     {
-        public static async Task<JContainer> getDataFromService(string queryString)
+
+        public static async Task<string> GetDataFromService(string queryString)
         {
             HttpClient client = new HttpClient();
             var response = await client.GetAsync(queryString);
 
-            JContainer data = null;
+            string json;
             if (response != null)
             {
-                string json = response.Content.ReadAsStringAsync().Result;
-                data = (JContainer)JsonConvert.DeserializeObject(json);
+                json = await response.Content.ReadAsStringAsync();
+                //data = (JContainer)JsonConvert.DeserializeObject(json);
             }
+            else
+                return string.Empty;
 
-            return data;
+            return json;
         }
     }
 }
