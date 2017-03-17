@@ -26,6 +26,9 @@ namespace WeatherApp {
         private global::Xamarin.Forms.Label windLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label visibilityLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label humidityLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -37,6 +40,7 @@ namespace WeatherApp {
             cityEntry = this.FindByName <global::Xamarin.Forms.Entry>("cityEntry");
             tempLabel = this.FindByName <global::Xamarin.Forms.Label>("tempLabel");
             windLabel = this.FindByName <global::Xamarin.Forms.Label>("windLabel");
+            visibilityLabel = this.FindByName <global::Xamarin.Forms.Label>("visibilityLabel");
             humidityLabel = this.FindByName <global::Xamarin.Forms.Label>("humidityLabel");
             ocasoentry = this.FindByName <global::Xamarin.Forms.Label>("ocasoentry");
         }

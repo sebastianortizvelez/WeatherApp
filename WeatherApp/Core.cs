@@ -23,58 +23,6 @@ namespace WeatherApp
 
                 RootObject weatherObject = Newtonsoft.Json.JsonConvert.DeserializeObject<RootObject>(results);
 
-
-
-                /*
-                 * 
-                 * 
-                 * 
-                Weather weather = new Weather();
-                weather.Title = (string)results["name"];
-                weather.Temperature = (string)results["main"]["temp"] + "º";
-                weather.Wind = (string)results["wind"]["speed"] + " mph";
-                weather.Humidity = (string)results["main"]["humidity"] + " %";
-                weather.Visibility = (string)results["weather"][0]["main"];
-
-
-               
-
-                if (weather.Visibility.Equals("Clear"))
-                {
-                    weather.Visibility = "Despejadosss";
-
-                }
-
-                else if (weather.Visibility.Equals("Clouds"))
-                {
-                    weather.Visibility = "Con nubes";
-
-                }
-
-                else if (weather.Visibility.Equals("Rain"))
-                {
-                    weather.Visibility = "Con lluvias";
-
-                }
-
-                else if (weather.Visibility.Equals("Drizzle"))
-                {
-                    weather.Visibility = "Con llovizna";
-
-                }
-
-
-                DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
-                DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
-                DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
-                weather.Sunrise = sunrise.ToString() + " UTC";
-                weather.Sunset = sunset.ToString() + " UTC";
-                return weather;
-
-                */
-
-
-
                 return weatherObject;
 
 
@@ -83,6 +31,7 @@ namespace WeatherApp
             {
                 return null;
             }
+
         }
     }
 }

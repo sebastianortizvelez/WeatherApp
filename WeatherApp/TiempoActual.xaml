@@ -4,9 +4,11 @@
 
 	<ContentPage.Content>
 		<ScrollView>
-		<StackLayout>
+		<StackLayout Orientation = "Vertical">
+
+				
 			<StackLayout Orientation="Horizontal">
-			<Image Source="search.png" WidthRequest="30" HeightRequest="30" Margin="10,0,0,0" HorizontalOptions="Fill" VerticalOptions="Center">
+			<Image Source="search.png" WidthRequest="30" HeightRequest="30" Margin="10,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
 				</Image>
 			<Entry x:Name="cityEntry"  Placeholder = "Introduce la ciudad" FontSize="30">
 			</Entry>
@@ -17,22 +19,38 @@
 
 					
 			</StackLayout>
+				
 		
 			<Label Text="{Binding Title}" FontSize="40" HorizontalOptions="Start" VerticalOptions="Center">
 			</Label>
-			<StackLayout Orientation="Horizontal" Padding="45,0,0,0" >
 
-				
-				<Label x:Name="tempLabel" Text="{Binding Temperature}" FontSize="60" VerticalOptions = "Center" >
+
+		
+			<StackLayout Orientation="Horizontal" Padding="15,0,0,0" >
+
+			<StackLayout Orientation="Vertical" Padding="0,15,0,0"  VerticalOptions = "CenterAndExpand" HorizontalOptions="Fill" >
+
+
+						<Image Source="{Binding Foto}" WidthRequest="60" HeightRequest="60" Margin="15,0,0,0" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+				</Image>	
+				<Label x:Name="tempLabel" Text="{Binding Temperature}"  FontSize="50" >
 				</Label>
 
+			
+
+						</StackLayout>
 
 					
-				<StackLayout Orientation="Vertical" Padding="85,15,0,0">
+				<StackLayout Orientation="Vertical" Padding="55,15,0,0">
 					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill">
 					</Label>
 					<Label x:Name="windLabel" Text="{Binding Wind}"  FontSize="30" HorizontalOptions="Fill" TextColor="Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>
+					<Label Text="Visibilidad" FontSize="30" HorizontalOptions="Fill">
+					</Label>
+							<Label x:Name="visibilityLabel" Text="{Binding Visibility}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					</Label>
+						
 						<Label Text="Humedad" FontSize="30" HorizontalOptions="Fill">
 					</Label>
 					<Label x:Name="humidityLabel" Text="{Binding Humidity}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
@@ -53,6 +71,7 @@
 					</Label>
 							<Label  Text="{Binding Sunrise, StringFormat='{}{0:h:mm tt}'}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>
+						
 						
 					
 				</StackLayout>
