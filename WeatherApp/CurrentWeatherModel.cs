@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Linq;
+using Xamarin.Forms;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 namespace WeatherApp
 {
 
@@ -11,7 +14,7 @@ namespace WeatherApp
         public String Temp_min { get; set; }
         public String Temp_max { get; set; }
         public String Wind { get; set; }
-        public double Humidity { get; set; }
+        public String Humidity { get; set; }
         public double Rain { get; set; }
         public string Visibility { get; set; }
         public DateTime Sunrise { get; set; }
@@ -26,16 +29,15 @@ namespace WeatherApp
             Temp_min = weatherRootObject.main.temp_min.ToString();
             Temp_max = weatherRootObject.main.temp_max.ToString();
             Wind = weatherRootObject.wind.speed.ToString();
-            Humidity = weatherRootObject.main.humidity;
+            Humidity = weatherRootObject.main.humidity.ToString();
             Rain = weatherRootObject.rain == null ? 0 : weatherRootObject.rain.__invalid_name__3h;
             DateTime time = new System.DateTime(1970, 1, 1, 1, 0, 0, 0);
             Sunrise = time.AddSeconds(weatherRootObject.sys.sunrise);
             Sunset = time.AddSeconds(weatherRootObject.sys.sunset);
             Country = weatherRootObject.sys.country;
-
-
-  
             Weather w = weatherRootObject.weather.FirstOrDefault();
+
+
             if (w != null)
             {
                 Visibility = w.main;
@@ -64,7 +66,7 @@ namespace WeatherApp
 
                 else if (Visibility.Equals("Drizzle"))
             {
-               Visibility = "Con llovizna";
+               Visibility = "Llovizna";
                 Foto = "lluvias.png";
 
             }
@@ -73,9 +75,14 @@ namespace WeatherApp
             Temp_min += "º";
             Temp_max += "º";
             Wind += " Km/h";
+            Humidity += "%";
     
 
 
         }
+
+   
     }
+
+
 }

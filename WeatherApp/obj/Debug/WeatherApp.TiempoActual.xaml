@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WeatherApp.TiempoActual"  Title="Clima" Icon="unit.png">
 
+<ContentPage.Resources>
 
+
+		<ResourceDictionary>
+
+		<Style x:key ="CustomLabelStyle" 
+		TargetType = "Label">
+
+				<Setter Property = "TextColor" Value = "Black" />
+
+			</Style>
+
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	
 	<ContentPage.Content>
 		<ScrollView>
-		<StackLayout Orientation = "Vertical">
+		<StackLayout Orientation = "Vertical" BackgroundColor="#F2F2F2">
 
 				
 			<StackLayout Orientation="Horizontal">
@@ -42,11 +57,11 @@
 
 					
 				<StackLayout Orientation="Vertical" Padding="55,15,0,0">
-					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill">
+					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill" >
 					</Label>
 					<Label x:Name="windLabel" Text="{Binding Wind}"  FontSize="30" HorizontalOptions="Fill" TextColor="Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>
-					<Label Text="Visibilidad" FontSize="30" HorizontalOptions="Fill">
+					<Label Text="Visibilidad"  FontSize="30" HorizontalOptions="Fill" >
 					</Label>
 							<Label x:Name="visibilityLabel" Text="{Binding Visibility}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
 					</Label>

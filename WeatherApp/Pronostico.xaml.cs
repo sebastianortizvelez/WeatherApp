@@ -11,6 +11,7 @@ namespace WeatherApp
         {
             InitializeComponent();
    listView.ItemsSource = Data.WeatherList;
+
         }
     }
 }

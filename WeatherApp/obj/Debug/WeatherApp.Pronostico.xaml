@@ -14,7 +14,7 @@
 							<Image Source="{Binding foto}" Margin="70,0,0,0">
 							</Image>
 							<Label Text="{Binding temp_min}" Margin="30,0,0,0" FontSize=" 30" />
-							<Label Text="{Binding temp,StringFormat='º{0}'}" Margin="30,0,0,0" FontSize="30" />
+							<Label Text="{Binding temp}" Margin="30,0,0,0" FontSize="30" />
 						</StackLayout>
 					</ViewCell>
 				</DataTemplate>
