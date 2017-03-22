@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{13594E95-E6F9-4D27-87A9-3D7933E7912C}|Default">
   <MonoDevelop.Ide.ItemProperties.WeatherApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AFEDE4A9-4A67-4A52-B184-FF5481A2DE39" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherApp/CurrentWeatherModel.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="WeatherApp/Core.cs" Line="53" Column="38" />
-      <File FileName="WeatherApp/CurrentWeatherModel.cs" Line="79" Column="26" />
-      <File FileName="WeatherApp/Data.cs" Line="112" Column="39" />
-      <File FileName="WeatherApp/TiempoActual.xaml.cs" Line="26" Column="67" />
+      <File FileName="../../../Desktop/plungeint-trellochart-d44e288bac56/TrelloGraphs/App.xaml" Line="5" Column="2" />
+      <File FileName="WeatherApp/App.xaml" Line="15" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -14,5 +12,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.WeatherApp.Droid PreferredExecutionTarget="Android.Nexus5" />
+  <MonoDevelop.Ide.ItemProperties.WeatherApp.Droid PreferredExecutionTarget="Android.878df8a6" />
 </Properties>

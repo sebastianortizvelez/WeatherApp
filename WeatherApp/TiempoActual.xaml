@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WeatherApp.TiempoActual"  Title="Clima" Icon="unit.png">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:i18n="clr-namespace:WeatherApp;assembly=WeatherApp"
+	x:Class="WeatherApp.TiempoActual"  Title="Clima" Icon="unit.png">
 
 <ContentPage.Resources>
 
 
-		<ResourceDictionary>
 
-		<Style x:key ="CustomLabelStyle" 
-		TargetType = "Label">
-
-				<Setter Property = "TextColor" Value = "Black" />
-
-			</Style>
-
-		</ResourceDictionary>
 	</ContentPage.Resources>
 
 	
@@ -57,34 +51,34 @@
 
 					
 				<StackLayout Orientation="Vertical" Padding="55,15,0,0">
-					<Label Text="Viento" FontSize="30" HorizontalOptions="Fill" >
+					<Label Text="Viento" Style = "{StaticResource LabelStyle}" >
 					</Label>
-					<Label x:Name="windLabel" Text="{Binding Wind}"  FontSize="30" HorizontalOptions="Fill" TextColor="Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label x:Name="windLabel" Text="{Binding Wind}"  Style = "{StaticResource LabelStyleData}">
 					</Label>
-					<Label Text="Visibilidad"  FontSize="30" HorizontalOptions="Fill" >
+					<Label Text="Visibilidad"  Style = "{StaticResource LabelStyle}" >
 					</Label>
-							<Label x:Name="visibilityLabel" Text="{Binding Visibility}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+							<Label x:Name="visibilityLabel" Text="{Binding Visibility}"  Style = "{StaticResource LabelStyleData}">
 					</Label>
 						
-						<Label Text="Humedad" FontSize="30" HorizontalOptions="Fill">
+						<Label Text="Humedad" Style = "{StaticResource LabelStyle}" >
 					</Label>
-					<Label x:Name="humidityLabel" Text="{Binding Humidity}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label x:Name="humidityLabel" Text="{Binding Humidity}"  Style = "{StaticResource LabelStyleData}">
 					</Label>
-						<Label Text="Temp min" FontSize="30" HorizontalOptions="Fill">
+						<Label Text="Temp min" Style = "{StaticResource LabelStyle}" >
 					</Label>
-					<Label  Text="{Binding Temp_min}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label  Text="{Binding Temp_min}"  Style = "{StaticResource LabelStyleData}" >
 					</Label>
-							<Label Text="Temp max" FontSize="30" HorizontalOptions="Fill">
+							<Label Text="Temp max" Style = "{StaticResource LabelStyle}" >
 					</Label>
-					<Label  Text="{Binding Temp_max}" FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label  Text="{Binding Temp_max}"  Style = "{StaticResource LabelStyleData}">
 							</Label>
-									<Label Text="Ocaso" FontSize="30" HorizontalOptions="Fill">
+									<Label Text="Ocaso" Style = "{StaticResource LabelStyle}" >
 					</Label>
-					<Label x:Name="ocasoentry"  Text="{Binding Sunset, StringFormat='{}{0:h:mm tt}'}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+					<Label x:Name="ocasoentry"  Text="{Binding Sunset, StringFormat='{}{0:h:mm tt}'}"   Style = "{StaticResource LabelStyleData}">
 					</Label>
-									<Label Text="Alba" FontSize="30" HorizontalOptions="Fill">
+									<Label Text="Alba" Style = "{StaticResource LabelStyle}" >
 					</Label>
-							<Label  Text="{Binding Sunrise, StringFormat='{}{0:h:mm tt}'}"  FontSize="30" HorizontalOptions="Fill" TextColor = "Red" VerticalOptions="Fill" Margin="0,-15,0,0">
+							<Label  Text="{Binding Sunrise, StringFormat='{}{0:h:mm tt}'}"   Style = "{StaticResource LabelStyleData}">
 					</Label>
 						
 						
